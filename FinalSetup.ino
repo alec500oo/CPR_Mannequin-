@@ -246,7 +246,7 @@ draw_3:
         }
         //TODO: at each COMPRESSION measure the depth and time
 
-          if(compTime >= 1000) {  //Slow down the compression check to onece every half second
+          /*if(compTime >= 1000) {  //Slow down the compression check to onece every half second
           prevTime_3 = millis();
           if(sensVal < sensVal_2) {
             if(done) {
@@ -265,7 +265,7 @@ draw_3:
             sensVal_2 = sensVal;
             done = true;
           }
-        }
+        }*/
 
         if(ts.touched()){
           p.x = map(p.x, TS_MINY, TS_MAXY, 0, tft.height());
